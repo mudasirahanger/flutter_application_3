@@ -49,7 +49,15 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
-          body: const Text(''),
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Image.asset('assets/images/banner2.jpg', width: 490),
+              Image.network(
+                'https://picsum.photos/250?image=9',
+              )
+            ],
+          ),
           drawer: Drawer(
             child: ListView(
               padding: const EdgeInsets.only(top: 20.0),
